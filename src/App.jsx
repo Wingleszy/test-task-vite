@@ -18,7 +18,7 @@ function App() {
 
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/test-task-vite/'>
       <Routes>
         <Route path='/' element={user ? <Home/> : <Navigate to='/login' />}/>
         <Route path='/devices' element={user ? <DeviceList/> : <Navigate to='/login'/>}/>
